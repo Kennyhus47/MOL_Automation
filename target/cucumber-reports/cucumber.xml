@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.428">
+    <testcase classname="User Verifying Dailymail Application" name="Verify web page of dailymail application" time="11.162">
+        <failure message="Current data should be displayed and matched expected [Sunday, Aug 21th 2022] but found [Sunday, Aug 21st 2022]" type="java.lang.AssertionError"><![CDATA[Given User is on Application home page......................................passed
+Then I Verify the webpage displays current date and time....................failed
+When I Navigate to the Sport menu...........................................skipped
+When I Click on the Football sub navigation item............................skipped
+Then I Verify primary navigation colour Sport and secondary navigation Football are same.skipped
+And I Click on the first article displayed and traverse to the gallery image.skipped
+And I Click on gallery icon appearing on the right-hand side corner.........skipped
+Then I Verify previous and next arrows buttons..............................skipped
+And I Navigate to a video embedded within the article.......................skipped
+And I Click the full screen button on the right-hand corner of the video....skipped
+When I Click on the Facebook share icon and verify it opens Facebook modal dialog.skipped
+And I Click the full screen button on the right-hand corner of the video....skipped
+And I Click on collapse icon on video.......................................skipped
+And I Click on close icon...................................................skipped
+And I Get "Liverpool" team points...........................................skipped
+And I Get "Liverpool" team position.........................................skipped
+
+StackTrace:
+java.lang.AssertionError: Current data should be displayed and matched expected [Sunday, Aug 21th 2022] but found [Sunday, Aug 21st 2022]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Scenarios.HomePageStepDef.i_verify_the_webpage_displays_current_date_and_time(HomePageStepDef.java:29)
+	at ✽.I Verify the webpage displays current date and time(file:///C:/Users/koduk/eclipse-workspace2/MOL_Automation/src/test/java/com/app/feature/DailyMail.feature:8)
+]]></failure>
+    </testcase>
+</testsuite>
